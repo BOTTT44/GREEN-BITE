@@ -18,7 +18,7 @@ const $ = id => document.getElementById(id);
   }, 4000);
 })();
 
-// health Tip of the Day
+//  Tip of the Day
 (() => {
   const el = $("health-tip");
   if (!el) return;
