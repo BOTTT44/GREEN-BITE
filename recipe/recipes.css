@@ -49,8 +49,13 @@ h1 {
   border-radius: 0 6px 6px 0;
   cursor: pointer;
   flex-shrink: 0;
+  line-height: 1; 
 }
-
+.sbtn svg { 
+  width: 18px; 
+  height: 18px; 
+  pointer-events: none; 
+}
 .catbox {
   display: flex;
   justify-content: center;
@@ -84,7 +89,9 @@ h1 {
 }
 
 .catbtn.active {
-  background: #e0e0e0;
+  background: #ffffff;
+  border: solid;
+  border-color: #00000083;
   color: var(--purple-light);
   font-weight: 900;
 }
@@ -288,6 +295,10 @@ ul, ol {
 }
 
 @media (max-width: 600px) {
+  .sbox{
+    width: 90%;
+    margin: auto;
+  }
   .catbtn {
     display: flex;
     flex-direction: column;

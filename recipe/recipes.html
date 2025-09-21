@@ -27,8 +27,19 @@
   <div class="sbgbox">
     <h1>FIND THE BEST MEAL FOR YOU</h1>
     <div class="sbox">
-      <input type="text" placeholder="Search recipes..." id="searchbar" class="searchbar">
-    </div>
+  <input
+    type="text"
+    placeholder="Search recipes..."
+    id="searchbar"
+    class="searchbar"
+    aria-label="Search recipes"
+  />
+  <button class="sbtn" id="searchBtn" type="button" aria-label="Search">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-1.06 1.06l.27.28v.79l4.25 4.25a1.06 1.06 0 0 0 1.5-1.5L15.5 14zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
+    </svg>
+  </button>
+</div>
   </div>
   <main class="bg">
     <div class="catbox">

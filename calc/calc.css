@@ -271,8 +271,8 @@ button {
     margin: 5px auto;
     display: block;
   }
-  .mhead{
-    font-size: 1.2rem;
+  .mhead,
+  .shead {
     text-align: center;
   }
   #minput {
@@ -305,5 +305,3 @@ button {
   #stop { grid-column: 1; grid-row: 3; }
   #play { grid-column: 2; grid-row: 3; }
 }
-
-
