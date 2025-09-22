@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
   <meta name="description" content="Find healthy vegan, easy-to-make, and high-nutrition recipes on GreenBite. Explore meals, nutrition info, and cooking steps tailored for a healthier lifestyle.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>GreenBite - RECIPES</title>
@@ -14,11 +15,11 @@
   <header class="head">
     <div class="head-in">
       <a class="logo" href="../index.html"><span class="green">Green</span> <span class="bite">Bite</span></a>
-      <div class="hamburger" id="hamburger" aria-label="Menu" aria-controls="main-nav" aria-expanded="false">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+      <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
       <nav class="nav" id="main-nav">
         <a href="../index.html">HOME</a> <a href="../Tools/tools.html">TOOLS</a> <a href="./recipes.html">RECIPES</a> <a href="../body/body.html">WORKOUT</a> <a href="../calc/calc.html">MINDFULNESS</a> <a href="../contact/contact.html">CONTACT</a>
       </nav>
@@ -32,8 +33,7 @@
     placeholder="Search recipes..."
     id="searchbar"
     class="searchbar"
-    aria-label="Search recipes"
-  />
+  >
   <button class="sbtn" id="searchBtn" type="button" aria-label="Search">
     <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
       <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-1.06 1.06l.27.28v.79l4.25 4.25a1.06 1.06 0 0 0 1.5-1.5L15.5 14zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
@@ -45,14 +45,14 @@
     <div class="catbox">
       <button class="catbtn active" id="vegan" data-category="vegan">VEGAN BASED</button> <button class="catbtn" id="easy" data-category="easy">EASY TO MAKE</button> <button class="catbtn" id="high" data-category="nutrition">HIGH NUTRITIONS</button>
     </div>
-    <section class="fsection" id="recipes"></section>
+    <div class="fsection" id="recipes"></div>
   </main>
   <div id="infoModal" class="ibox">
     <div class="icont">
       <span class="iclose">×</span>
-      <h2 id="ititle"></h2>
+      <h2 id="ititle">not empty</h2>
       <div class="imgbox">
-        <img id="iimage" src="" alt="" width="400" height="300">
+        <img id="iimage" src=".//imgs/easy/chicken.jpg" alt="" width="400" height="300">
         <div class="finfo">
           <h3>Ingredients:</h3>
           <ul id="iingredients"></ul>

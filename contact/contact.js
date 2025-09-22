@@ -4,7 +4,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
+  const email = document.getElementById('Email').value.trim();
   const phone = document.getElementById('phone').value.trim();
   const interest = document.getElementById('interest').value;
   const message = document.getElementById('message').value.trim();
