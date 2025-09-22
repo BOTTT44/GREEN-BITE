@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll(".nav a");
-  const currentPath = window.location.pathname;
+  const links = document.querySelectorAll(".nav a");
+  let path = window.location.pathname;
 
-  navLinks.forEach(link => {
-    if (currentPath.includes(link.getAttribute("href").replace("..", ""))) {
-      link.classList.add("active");
+
+  if (path.endsWith("/")) path += "index.html";
+
+  links.forEach(a => {
+
+    const href = a.getAttribute("href").replace("..", "").replace("./", "/");
+    if (path.endsWith(href) || path.includes(href)) {
+      a.classList.add("active");
+      a.setAttribute("aria-current", "page");
     }
   });
 });
-
-
 
 
 function get(id) {
